@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "resuButton",
+    "texture": "b16562af-1b83-4dfa-96d3-ab7db553a330",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      26,
+      28
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      26,
+      28
+    ]
+  }
+}

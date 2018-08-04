@@ -1,0 +1,587 @@
+2018-08-04T11:46:02.336Z - normal: Load ~/.CocosCreator/settings.json
+2018-08-04T11:46:02.339Z - normal: checking language setting...
+2018-08-04T11:46:02.340Z - normal: Language: zh
+2018-08-04T11:46:02.825Z - success: protocol editor-framework registered
+2018-08-04T11:46:02.826Z - success: protocol app registered
+2018-08-04T11:46:02.826Z - success: protocol theme registered
+2018-08-04T11:46:02.826Z - success: protocol packages registered
+2018-08-04T11:46:02.827Z - success: protocol unpack registerred
+2018-08-04T11:46:02.827Z - success: protocol disable-commonjs registerred
+2018-08-04T11:46:02.959Z - normal: connected!
+2018-08-04T11:46:02.961Z - normal: Check project /Volumes/Document/Cocos/FlappyBird
+2018-08-04T11:46:02.963Z - normal: Initializing project /Volumes/Document/Cocos/FlappyBird
+2018-08-04T11:46:02.967Z - normal: Initializing Cocos2d
+2018-08-04T11:46:03.208Z - normal: Initializing Asset Database
+2018-08-04T11:46:03.244Z - success: protocol uuid registerred
+2018-08-04T11:46:03.244Z - success: protocol db registerred
+2018-08-04T11:46:03.245Z - success: protocol thumbnail registerred
+2018-08-04T11:46:03.245Z - normal: Loading editor/builtin packages
+2018-08-04T11:46:03.384Z - success: assets loaded
+2018-08-04T11:46:03.389Z - success: builder loaded
+2018-08-04T11:46:03.391Z - success: cocos-analytics loaded
+2018-08-04T11:46:03.397Z - success: console loaded
+2018-08-04T11:46:03.432Z - success: fb-instant-games loaded
+2018-08-04T11:46:03.437Z - success: hierarchy loaded
+2018-08-04T11:46:03.445Z - success: inspector loaded
+2018-08-04T11:46:03.446Z - success: keystore loaded
+2018-08-04T11:46:03.452Z - success: node-library loaded
+2018-08-04T11:46:03.455Z - success: package-asset loaded
+2018-08-04T11:46:03.457Z - success: preferences loaded
+2018-08-04T11:46:03.461Z - success: project-exporter loaded
+2018-08-04T11:46:03.479Z - success: project-importer loaded
+2018-08-04T11:46:03.482Z - success: project-settings loaded
+2018-08-04T11:46:03.487Z - success: ui-kit loaded
+2018-08-04T11:46:03.495Z - success: scene loaded
+2018-08-04T11:46:03.496Z - success: sprite-editor loaded
+2018-08-04T11:46:03.502Z - success: store loaded
+2018-08-04T11:46:03.510Z - success: timeline loaded
+2018-08-04T11:46:03.511Z - normal: Loading builtin packages
+2018-08-04T11:46:03.516Z - success: asset-db-debugger loaded
+2018-08-04T11:46:03.517Z - success: color-picker loaded
+2018-08-04T11:46:03.522Z - success: package-manager loaded
+2018-08-04T11:46:03.523Z - success: qqplay-adapter loaded
+2018-08-04T11:46:03.529Z - success: sdkbox loaded
+2018-08-04T11:46:03.535Z - success: tester loaded
+2018-08-04T11:46:03.542Z - success: ui-grid loaded
+2018-08-04T11:46:03.546Z - success: ui-kit-preview-extra loaded
+2018-08-04T11:46:03.550Z - success: ui-kit-preview loaded
+2018-08-04T11:46:03.555Z - success: ui-tree loaded
+2018-08-04T11:46:03.556Z - success: weapp-adapter loaded
+2018-08-04T11:46:04.619Z - normal: Loading packages
+2018-08-04T11:46:04.625Z - normal: Watching packages
+2018-08-04T11:46:04.679Z - normal: Run Application
+2018-08-04T11:46:05.379Z - success: preview server running at http://localhost:7456
+2018-08-04T11:46:11.650Z - error: Rect height exceeds maximum margin: /Volumes/Document/Cocos/FlappyBird/library/imports/64/647b7420-c5b9-4648-ac13-63e1542e3b92.png
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/CCDebugger.js:351:8)
+    at _ccsg.Sprite.WebGLRenderCmd.proto._checkTextureBoundary (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/sprites/CCSGSpriteWebGLRenderCmd.js:234:16)
+    at TheClass.initWithTexture (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/sprites/CCSGSprite.js:514:25)
+    at TheClass._updateQuads (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:744:34)
+    at TheClass._alignText (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:645:23)
+    at TheClass._updateContent (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:1057:18)
+    at TheClass._updateLabel (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:571:18)
+    at TheClass._notifyLabelSkinDirty (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:581:18)
+    at TheClass.enableWrapText (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:272:14)
+2018-08-04T11:46:11.651Z - error: Rect height exceeds maximum margin: /Volumes/Document/Cocos/FlappyBird/library/imports/64/647b7420-c5b9-4648-ac13-63e1542e3b92.png
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/CCDebugger.js:351:8)
+    at _ccsg.Sprite.WebGLRenderCmd.proto._checkTextureBoundary (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/sprites/CCSGSpriteWebGLRenderCmd.js:234:16)
+    at TheClass.initWithTexture (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/sprites/CCSGSprite.js:514:25)
+    at TheClass._updateQuads (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:744:34)
+    at TheClass._alignText (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:645:23)
+    at TheClass._updateContent (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:1057:18)
+    at TheClass._updateLabel (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:571:18)
+    at TheClass._notifyLabelSkinDirty (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:581:18)
+    at TheClass.enableWrapText (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:272:14)
+2018-08-04T11:51:20.441Z - error: Rect height exceeds maximum margin: /Volumes/Document/Cocos/FlappyBird/library/imports/64/647b7420-c5b9-4648-ac13-63e1542e3b92.png
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/CCDebugger.js:351:8)
+    at _ccsg.Sprite.WebGLRenderCmd.proto._checkTextureBoundary (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/sprites/CCSGSpriteWebGLRenderCmd.js:234:16)
+    at TheClass.initWithTexture (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/sprites/CCSGSprite.js:514:25)
+    at TheClass._updateQuads (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:744:34)
+    at TheClass._alignText (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:645:23)
+    at TheClass._updateContent (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:1057:18)
+    at TheClass._updateLabel (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:571:18)
+    at TheClass._notifyLabelSkinDirty (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:581:18)
+    at TheClass.enableWrapText (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:272:14)
+2018-08-04T11:51:20.443Z - error: Rect height exceeds maximum margin: /Volumes/Document/Cocos/FlappyBird/library/imports/64/647b7420-c5b9-4648-ac13-63e1542e3b92.png
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/CCDebugger.js:351:8)
+    at _ccsg.Sprite.WebGLRenderCmd.proto._checkTextureBoundary (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/sprites/CCSGSpriteWebGLRenderCmd.js:234:16)
+    at TheClass.initWithTexture (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/sprites/CCSGSprite.js:514:25)
+    at TheClass._updateQuads (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:744:34)
+    at TheClass._alignText (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:645:23)
+    at TheClass._updateContent (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:1057:18)
+    at TheClass._updateLabel (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:571:18)
+    at TheClass._notifyLabelSkinDirty (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:581:18)
+    at TheClass.enableWrapText (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/label/CCSGLabel.js:272:14)
+2018-08-04T12:17:33.952Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/builder/panel/builder.js:1:15836)
+    at EventEmitter.ipcRenderer.on.n (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:4603)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-08-04T12:17:41.010Z - normal: Start building with options : {
+  "actualPlatform": "Wechat Game",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Volumes/Document/Cocos/FlappyBird/build",
+  "debug": false,
+  "dest": "/Volumes/Document/Cocos/FlappyBird/build/wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.FlappyBird",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "4680416c-6135-43af-ab94-6d0a96dc1fb6"
+  ],
+  "sourceMaps": false,
+  "startScene": "4680416c-6135-43af-ab94-6d0a96dc1fb6",
+  "template": "link",
+  "title": "FlappyBird",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "086e0951-efba-48",
+  "zipCompressJs": true,
+  "project": "/Volumes/Document/Cocos/FlappyBird",
+  "projectName": "FlappyBird",
+  "debugBuildWorker": false
+}
+2018-08-04T12:17:41.012Z - normal: Building /Volumes/Document/Cocos/FlappyBird
+2018-08-04T12:17:41.013Z - normal: Destination /Volumes/Document/Cocos/FlappyBird/build/wechatgame
+2018-08-04T12:17:41.307Z - normal: Delete /Volumes/Document/Cocos/FlappyBird/build/wechatgame/**/*
+2018-08-04T12:17:43.521Z - normal: Start building assets
+2018-08-04T12:17:43.521Z - normal: Start spawn build-worker
+2018-08-04T12:17:44.209Z - normal: Finish spawn build-worker
+2018-08-04T12:17:44.209Z - normal: Start init build-worker
+2018-08-04T12:17:46.413Z - normal: Finish init build-worker
+2018-08-04T12:17:46.413Z - normal: Start build-assets in worker
+2018-08-04T12:17:46.922Z - normal: Finish build-assets in worker
+2018-08-04T12:17:46.927Z - normal: Finish building assets
+2018-08-04T12:17:46.935Z - normal: Start building plugin scripts
+2018-08-04T12:17:46.973Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-08-04T12:17:48.181Z - normal: Built to "/Volumes/Document/Cocos/FlappyBird/build/wechatgame" successfully
+2018-08-04T12:18:12.235Z - warn: 找不到微信开发程序版本信息路径 [/Applications/wechatwebdevtools.app/Contents/Resources/app.nw/package.json]。
+2018-08-04T12:18:12.236Z - warn: 微信开发程序版本过低，不能享用所有功能，请尽快升级。
+2018-08-04T12:18:12.692Z - normal: Initializing...
+
+2018-08-04T12:18:12.699Z - normal: idePortFile: /Users/xerrors/Library/Application Support/微信web开发者工具/Default/.ide
+
+2018-08-04T12:18:12.719Z - normal: IDE server has started, listening on http://127.0.0.1:46842
+
+2018-08-04T12:18:12.719Z - normal: initialization finished
+
+2018-08-04T12:18:12.925Z - normal: open IDE success
+
+2018-08-04T13:20:59.513Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:27687
+2018-08-04T13:55:32.631Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/builder/panel/builder.js:1:15836)
+    at EventEmitter.ipcRenderer.on.n (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:4603)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-08-04T13:55:36.194Z - normal: Start building with options : {
+  "actualPlatform": "Wechat Game",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Volumes/Document/Cocos/FlappyBird/build",
+  "debug": false,
+  "dest": "/Volumes/Document/Cocos/FlappyBird/build/wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.FlappyBird",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "4680416c-6135-43af-ab94-6d0a96dc1fb6"
+  ],
+  "sourceMaps": false,
+  "startScene": "4680416c-6135-43af-ab94-6d0a96dc1fb6",
+  "template": "link",
+  "title": "FlappyBird",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "086e0951-efba-48",
+  "zipCompressJs": true,
+  "project": "/Volumes/Document/Cocos/FlappyBird",
+  "projectName": "FlappyBird",
+  "debugBuildWorker": false
+}
+2018-08-04T13:55:36.196Z - normal: Building /Volumes/Document/Cocos/FlappyBird
+2018-08-04T13:55:36.196Z - normal: Destination /Volumes/Document/Cocos/FlappyBird/build/wechatgame
+2018-08-04T13:55:36.197Z - normal: Delete /Volumes/Document/Cocos/FlappyBird/build/wechatgame/**/*
+2018-08-04T13:55:38.179Z - normal: Start building assets
+2018-08-04T13:55:38.179Z - normal: Start spawn build-worker
+2018-08-04T13:55:38.877Z - normal: Finish spawn build-worker
+2018-08-04T13:55:38.877Z - normal: Start init build-worker
+2018-08-04T13:55:41.169Z - normal: Finish init build-worker
+2018-08-04T13:55:41.169Z - normal: Start build-assets in worker
+2018-08-04T13:55:41.725Z - normal: Finish build-assets in worker
+2018-08-04T13:55:41.738Z - normal: Finish building assets
+2018-08-04T13:55:41.751Z - normal: Start building plugin scripts
+2018-08-04T13:55:41.785Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-08-04T13:55:42.889Z - normal: Built to "/Volumes/Document/Cocos/FlappyBird/build/wechatgame" successfully
+2018-08-04T13:55:44.286Z - warn: 找不到微信开发程序版本信息路径 [/Applications/wechatwebdevtools.app/Contents/Resources/app.nw/package.json]。
+2018-08-04T13:55:44.286Z - warn: 微信开发程序版本过低，不能享用所有功能，请尽快升级。
+2018-08-04T13:55:44.886Z - normal: Initializing...
+
+2018-08-04T13:55:44.892Z - normal: idePortFile: /Users/xerrors/Library/Application Support/微信web开发者工具/Default/.ide
+
+2018-08-04T13:55:44.917Z - normal: IDE server has started, listening on http://127.0.0.1:46842
+
+2018-08-04T13:55:44.917Z - normal: initialization finished
+
+2018-08-04T13:55:45.068Z - normal: open IDE success
+
+2018-08-04T14:00:06.679Z - normal: Start building with options : {
+  "actualPlatform": "Wechat Game",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Volumes/Document/Cocos/FlappyBird/build",
+  "debug": false,
+  "dest": "/Volumes/Document/Cocos/FlappyBird/build/wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.FlappyBird",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "4680416c-6135-43af-ab94-6d0a96dc1fb6"
+  ],
+  "sourceMaps": false,
+  "startScene": "4680416c-6135-43af-ab94-6d0a96dc1fb6",
+  "template": "link",
+  "title": "FlappyBird",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "086e0951-efba-48",
+  "zipCompressJs": true,
+  "project": "/Volumes/Document/Cocos/FlappyBird",
+  "projectName": "FlappyBird",
+  "debugBuildWorker": false
+}
+2018-08-04T14:00:06.682Z - normal: Building /Volumes/Document/Cocos/FlappyBird
+2018-08-04T14:00:06.682Z - normal: Destination /Volumes/Document/Cocos/FlappyBird/build/wechatgame
+2018-08-04T14:00:06.684Z - normal: Delete /Volumes/Document/Cocos/FlappyBird/build/wechatgame/**/*
+2018-08-04T14:00:08.883Z - normal: Start building assets
+2018-08-04T14:00:08.883Z - normal: Start spawn build-worker
+2018-08-04T14:00:09.807Z - normal: Finish spawn build-worker
+2018-08-04T14:00:09.807Z - normal: Start init build-worker
+2018-08-04T14:00:12.129Z - normal: Finish init build-worker
+2018-08-04T14:00:12.129Z - normal: Start build-assets in worker
+2018-08-04T14:00:12.705Z - normal: Finish build-assets in worker
+2018-08-04T14:00:12.713Z - normal: Finish building assets
+2018-08-04T14:00:12.726Z - normal: Start building plugin scripts
+2018-08-04T14:00:12.764Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-08-04T14:00:13.882Z - normal: Built to "/Volumes/Document/Cocos/FlappyBird/build/wechatgame" successfully
+2018-08-04T14:00:15.305Z - warn: 找不到微信开发程序版本信息路径 [/Applications/wechatwebdevtools.app/Contents/Resources/app.nw/package.json]。
+2018-08-04T14:00:15.306Z - warn: 微信开发程序版本过低，不能享用所有功能，请尽快升级。
+2018-08-04T14:00:15.660Z - normal: Initializing...
+
+2018-08-04T14:00:15.667Z - normal: idePortFile: /Users/xerrors/Library/Application Support/微信web开发者工具/Default/.ide
+
+2018-08-04T14:00:15.688Z - normal: IDE server has started, listening on http://127.0.0.1:46842
+
+2018-08-04T14:00:15.690Z - normal: initialization finished
+
+2018-08-04T14:00:15.814Z - normal: open IDE success
+
+2018-08-04T14:00:28.687Z - warn: 找不到微信开发程序版本信息路径 [/Applications/wechatwebdevtools.app/Contents/Resources/app.nw/package.json]。
+2018-08-04T14:00:28.687Z - warn: 微信开发程序版本过低，不能享用所有功能，请尽快升级。
+2018-08-04T14:00:29.019Z - normal: Initializing...
+
+2018-08-04T14:00:29.026Z - normal: idePortFile: /Users/xerrors/Library/Application Support/微信web开发者工具/Default/.ide
+
+2018-08-04T14:00:29.044Z - normal: IDE server has started, listening on http://127.0.0.1:46842
+
+2018-08-04T14:00:29.044Z - normal: initialization finished
+
+2018-08-04T14:00:29.167Z - normal: open IDE success
+
+2018-08-04T14:00:39.912Z - warn: 找不到微信开发程序版本信息路径 [/Applications/wechatwebdevtools.app/Contents/Resources/app.nw/package.json]。
+2018-08-04T14:00:39.912Z - warn: 微信开发程序版本过低，不能享用所有功能，请尽快升级。
+2018-08-04T14:00:40.246Z - normal: Initializing...
+
+2018-08-04T14:00:40.253Z - normal: idePortFile: /Users/xerrors/Library/Application Support/微信web开发者工具/Default/.ide
+
+2018-08-04T14:00:40.268Z - normal: starting ide...
+
+2018-08-04T14:00:43.582Z - normal: IDE server has started, listening on http://127.0.0.1:22535
+
+2018-08-04T14:00:43.587Z - normal: initialization finished
+
+2018-08-04T14:00:43.847Z - normal: open IDE success
+
+2018-08-04T14:04:13.766Z - normal: Start building with options : {
+  "actualPlatform": "Wechat Game",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Volumes/Document/Cocos/FlappyBird/build",
+  "debug": false,
+  "dest": "/Volumes/Document/Cocos/FlappyBird/build/wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.FlappyBird",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "4680416c-6135-43af-ab94-6d0a96dc1fb6"
+  ],
+  "sourceMaps": false,
+  "startScene": "4680416c-6135-43af-ab94-6d0a96dc1fb6",
+  "template": "link",
+  "title": "FlappyBird",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "086e0951-efba-48",
+  "zipCompressJs": true,
+  "project": "/Volumes/Document/Cocos/FlappyBird",
+  "projectName": "FlappyBird",
+  "debugBuildWorker": false
+}
+2018-08-04T14:04:13.770Z - normal: Building /Volumes/Document/Cocos/FlappyBird
+2018-08-04T14:04:13.770Z - normal: Destination /Volumes/Document/Cocos/FlappyBird/build/wechatgame
+2018-08-04T14:04:13.771Z - normal: Delete /Volumes/Document/Cocos/FlappyBird/build/wechatgame/**/*
+2018-08-04T14:04:16.070Z - normal: Start building assets
+2018-08-04T14:04:16.070Z - normal: Start spawn build-worker
+2018-08-04T14:04:16.775Z - normal: Finish spawn build-worker
+2018-08-04T14:04:16.775Z - normal: Start init build-worker
+2018-08-04T14:04:19.065Z - normal: Finish init build-worker
+2018-08-04T14:04:19.065Z - normal: Start build-assets in worker
+2018-08-04T14:04:19.280Z - warn: The referenced asset used in "db://assets/scene/game.fire" is not found, it may have been deleted. Detailed information:
+Used by "Array"
+uuid: "9c20cdac-4286-4641-bb9e-496fb3900c12"
+2018-08-04T14:04:19.534Z - normal: Finish build-assets in worker
+2018-08-04T14:04:19.539Z - normal: Finish building assets
+2018-08-04T14:04:19.552Z - normal: Start building plugin scripts
+2018-08-04T14:04:19.589Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-08-04T14:04:20.732Z - normal: Built to "/Volumes/Document/Cocos/FlappyBird/build/wechatgame" successfully
+2018-08-04T14:04:21.950Z - warn: 找不到微信开发程序版本信息路径 [/Applications/wechatwebdevtools.app/Contents/Resources/app.nw/package.json]。
+2018-08-04T14:04:21.950Z - warn: 微信开发程序版本过低，不能享用所有功能，请尽快升级。
+2018-08-04T14:04:22.291Z - normal: Initializing...
+
+2018-08-04T14:04:22.297Z - normal: idePortFile: /Users/xerrors/Library/Application Support/微信web开发者工具/Default/.ide
+
+2018-08-04T14:04:22.319Z - normal: IDE server has started, listening on http://127.0.0.1:22535
+initialization finished
+
+2018-08-04T14:04:22.445Z - normal: open IDE success
+
+2018-08-04T14:04:46.926Z - warn: 找不到微信开发程序版本信息路径 [/Applications/wechatwebdevtools.app/Contents/Resources/app.nw/package.json]。
+2018-08-04T14:04:46.926Z - warn: 微信开发程序版本过低，不能享用所有功能，请尽快升级。
+2018-08-04T14:04:47.267Z - normal: Initializing...
+
+2018-08-04T14:04:47.274Z - normal: idePortFile: /Users/xerrors/Library/Application Support/微信web开发者工具/Default/.ide
+
+2018-08-04T14:04:47.289Z - normal: starting ide...
+
+2018-08-04T14:04:50.540Z - normal: IDE server has started, listening on http://127.0.0.1:38642
+
+2018-08-04T14:04:50.546Z - normal: initialization finished
+
+2018-08-04T14:04:50.816Z - normal: open IDE success
+
+2018-08-04T14:31:29.853Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:56122
+2018-08-04T14:32:49.255Z - normal: Start building with options : {
+  "actualPlatform": "Wechat Game",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Volumes/Document/Cocos/FlappyBird/build",
+  "debug": false,
+  "dest": "/Volumes/Document/Cocos/FlappyBird/build/wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.FlappyBird",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "4680416c-6135-43af-ab94-6d0a96dc1fb6"
+  ],
+  "sourceMaps": false,
+  "startScene": "4680416c-6135-43af-ab94-6d0a96dc1fb6",
+  "template": "link",
+  "title": "FlappyBird",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "086e0951-efba-48",
+  "zipCompressJs": true,
+  "project": "/Volumes/Document/Cocos/FlappyBird",
+  "projectName": "FlappyBird",
+  "debugBuildWorker": false
+}
+2018-08-04T14:32:49.258Z - normal: Building /Volumes/Document/Cocos/FlappyBird
+2018-08-04T14:32:49.258Z - normal: Destination /Volumes/Document/Cocos/FlappyBird/build/wechatgame
+2018-08-04T14:32:49.259Z - normal: Delete /Volumes/Document/Cocos/FlappyBird/build/wechatgame/**/*
+2018-08-04T14:32:51.334Z - normal: Start building assets
+2018-08-04T14:32:51.334Z - normal: Start spawn build-worker
+2018-08-04T14:32:52.039Z - normal: Finish spawn build-worker
+2018-08-04T14:32:52.039Z - normal: Start init build-worker
+2018-08-04T14:32:54.337Z - normal: Finish init build-worker
+2018-08-04T14:32:54.338Z - normal: Start build-assets in worker
+2018-08-04T14:32:54.850Z - normal: Finish build-assets in worker
+2018-08-04T14:32:54.854Z - normal: Finish building assets
+2018-08-04T14:32:54.864Z - normal: Start building plugin scripts
+2018-08-04T14:32:54.903Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-08-04T14:32:56.058Z - normal: Built to "/Volumes/Document/Cocos/FlappyBird/build/wechatgame" successfully
+2018-08-04T14:32:56.271Z - warn: 找不到微信开发程序版本信息路径 [/Applications/wechatwebdevtools.app/Contents/Resources/app.nw/package.json]。
+2018-08-04T14:32:56.272Z - warn: 微信开发程序版本过低，不能享用所有功能，请尽快升级。
+2018-08-04T14:32:56.851Z - normal: Initializing...
+
+2018-08-04T14:32:56.858Z - normal: idePortFile: /Users/xerrors/Library/Application Support/微信web开发者工具/Default/.ide
+
+2018-08-04T14:32:56.879Z - normal: IDE server has started, listening on http://127.0.0.1:38642
+initialization finished
+
+2018-08-04T14:32:57.050Z - normal: open IDE success
+
+2018-08-04T14:35:25.166Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:57580

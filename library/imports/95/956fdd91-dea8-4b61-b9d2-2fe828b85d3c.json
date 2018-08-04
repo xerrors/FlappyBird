@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tapToStart",
+    "texture": "1a48b2ad-625a-466c-95d3-eb8074afaf66",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      114,
+      98
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      114,
+      98
+    ]
+  }
+}

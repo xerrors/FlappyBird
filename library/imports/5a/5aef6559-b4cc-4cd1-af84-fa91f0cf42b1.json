@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "flappyBird",
+    "texture": "7289c3fe-f276-4b2a-bf70-8eb9c274f1c9",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      178,
+      48
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      178,
+      48
+    ]
+  }
+}
