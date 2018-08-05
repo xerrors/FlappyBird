@@ -1,9 +1,10 @@
 {
-  "ver": "2.0.0",
+  "ver": "2.2.0",
   "uuid": "a3faada8-a22a-4373-a6ec-c363525b4642",
   "type": "sprite",
   "wrapMode": "repeat",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
   "subMetas": {
     "bird2": {
       "ver": "1.0.3",

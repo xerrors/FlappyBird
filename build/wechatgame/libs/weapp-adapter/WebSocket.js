@@ -42,7 +42,8 @@ var WebSocket = (_temp = _class = function () {
 
     var socketTask = wx.connectSocket({
       url: url,
-      protocols: Array.isArray(protocols) ? protocols : [protocols]
+      protocols: Array.isArray(protocols) ? protocols : [protocols],
+      tcpNoDelay: true
     });
 
     _socketTask.set(this, socketTask);

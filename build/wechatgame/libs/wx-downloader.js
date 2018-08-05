@@ -279,7 +279,10 @@ function downloadRemoteFile (item, callback) {
                         },
                         fail: function (res) {
                             // Failed to save file, then just use remote url
-                            callback(null, null);
+                            callback({
+                                status: 0,
+                                errorMessage: res && res.errMsg ? res.errMsg : "Download file failed: " + remoteUrl
+                            }, null);
                         }
                     });
                 });
@@ -287,7 +290,10 @@ function downloadRemoteFile (item, callback) {
         },
         fail: function (res) {
             // Continue to try download with downloader, most probably will also fail
-            callback(null, null);
+            callback({
+                status: 0,
+                errorMessage: res && res.errMsg ? res.errMsg : "Download file failed: " + remoteUrl
+            }, null);
         }
     })
 }
