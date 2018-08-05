@@ -53,54 +53,71 @@ cc.Class({
             type: cc.Node
         },
 
-        jumpAudio: {
-            default: null,
-            type: cc.AudioClip
-        },
-
         title: {
             default: null,
             type: cc.Node
         },
 
-        // backGroundAudio: {
-        //     default: null,
-        //     type: cc.AudioClip,
-        // },
+        backGroundAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
 
+        jumpAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
 
-        //地面移动的速度
-        groundSpeed: 10,
-        //小鸟在未开始游戏时，上下浮动的速度
-        birdFloatSpeed: 0.5,
-        //计算帧数
-        fpscount: 0,
-        //判断是否游戏结束
-        isGameOver: false
+        lastScore: {
+            default: null,
+            type: cc.Label
+        },
+
+        bestScore: {
+            default: null,
+            type: cc.Label
+        }
 
     },
 
-    onLoad: function onLoad() {
-        // 隐藏重新开始
+    initData: function initData() {
+        // 隐藏重新开始、记分板，显示标题
         this.button.active = false;
         this.scoreDisplay.node.active = false;
         this.title.active = true;
 
-        //判断结束的flag
+        // 初始化帧数
+        this.fpscount = 0;
+
+        // 判断是否处于未开始游戏状态
+        this.bird.isprepared = false;
+
+        // 判断是否游戏结束
+        this.isGameOver = false;
+
+        // 判断第一次结束的flag
         this.firstTimeEnd = true;
 
-        //播放背景音乐
-        // this.current = cc.audioEngine.play(this.backGroundAudio, false, 1);
-
-        //初始化游戏的分数
+        // 初始化游戏的分数
         this.score = 0;
 
-        //判断是否处于未开始游戏状态
-        this.bird.isprepared = false;
+        // 地面以及柱子移动的速度
+        this.groundSpeed = 4;
+
+        // 小鸟在未开始游戏时，上下浮动的速度
+        this.birdFloatSpeed = 0.5;
+
+        //播放背景音乐
+        this.current = cc.audioEngine.play(this.backGroundAudio, true, 1);
 
         //设置柱子的初始位置
         this.pillar1.y = Math.random() * 700 - 280;
         this.pillar2.y = Math.random() * 700 - 280;
+    },
+
+    onLoad: function onLoad() {
+        //初始化游戏数据
+        this.initData();
 
         //当屏幕被点击的时候
         this.node.on(cc.Node.EventType.TOUCH_START, this.touchFunction, this);
@@ -110,7 +127,6 @@ cc.Class({
     },
 
     touchFunction: function touchFunction() {
-        // console.log( "cc.Node.EventType.TOUCH_START" );
         //停止所有动作
         this.bird.stopAllActions();
 
@@ -125,23 +141,29 @@ cc.Class({
     },
 
     setJumpAction: function setJumpAction() {
-        this.bird.jumpHeight = 100;
-        this.bird.jumpDuraction = 0.25;
+        this.bird.jumpHeight = 120;
+        this.bird.jumpDuraction = 0.3;
         this.bird.jumpRotation = -15;
         this.bird.dropTurnDuration = 0.2;
         this.bird.dropDownDuration = 1.3;
         this.bird.dropRotation = 90;
 
+        var dropDuration = (this.bird.y + this.node.height / 2) / (this.node.height - this.ground.height) * this.bird.dropDownDuration;
+
         //动作列表，函数有待优化
         var jumpUp = cc.moveBy(this.bird.jumpDuraction, cc.v2(0, this.bird.jumpHeight));
-        var turnUp = cc.rotateTo(0, -15);
+        var turnUp = cc.rotateTo(0, this.bird.jumpRotation);
         var jumpDown = cc.moveBy(this.bird.jumpDuraction, cc.v2(0, -this.bird.jumpHeight));
         var turnDown = cc.rotateTo(this.bird.dropTurnDuration, this.bird.dropRotation);
-        var dropDown = cc.moveTo((this.bird.y + 640) / 1280 * this.bird.dropDownDuration, this.bird.x, -512);
+        var dropDown = cc.moveTo(dropDuration, this.bird.x, this.ground.height - this.node.height / 2);
 
+        //动作的回执函数，即执行动作后播放音效，参考上手第一个小游戏的音效添加
         var callback = cc.callFunc(this.playJumpSound, this);
 
+        // spawn 同时执行多个动作
         this.bird.spawn = cc.spawn(turnDown, dropDown);
+
+        // sequence 按顺序执行多个动作
         return cc.sequence(turnUp, callback, jumpUp, jumpDown, this.bird.spawn);
     },
 
@@ -170,13 +192,13 @@ cc.Class({
         this.pillar1.x -= this.groundSpeed;
         this.pillar2.x -= this.groundSpeed;
 
-        if (this.pillar1.x <= -430) {
-            this.pillar1.x = 430;
+        if (this.pillar1.x <= -(this.node.width / 2 + this.pillar1.width / 2)) {
+            this.pillar1.x = this.node.width / 2 + this.pillar1.width / 2;
             this.pillar1.y = Math.random() * 700 - 280;
         }
 
-        if (this.pillar2.x <= -430) {
-            this.pillar2.x = 430;
+        if (this.pillar2.x <= -(this.node.width / 2 + this.pillar1.width / 2)) {
+            this.pillar2.x = this.node.width / 2 + this.pillar1.width / 2;
             this.pillar2.y = Math.random() * 700 - 280;
         }
 
@@ -188,8 +210,9 @@ cc.Class({
     },
 
     getScore: function getScore() {
-        var scoreLine = -135;
+        var scoreLine = this.bird.x - (this.pillar1.width + this.bird.width) / 2;
 
+        //判断是否得分
         if (this.pillar1.x <= scoreLine && this.pillar1.x > scoreLine - this.groundSpeed) {
             return true;
         }
@@ -220,12 +243,15 @@ cc.Class({
         var animBird = this.bird.getComponent(cc.Animation);
         animBird.stop();
 
+        // 把当前分数与最大分数比较
+        this.setScore();
+
         //关闭监听事件
         this.node.off(cc.Node.EventType.TOUCH_START, this.touchFunction, this);
 
         //停止所有动作，并重新加载界面
         this.bird.stopAllActions();
-        // cc.audioEngine.stop(this.current);
+        cc.audioEngine.stop(this.current);
 
         var callback = cc.callFunc(function () {
             //显示重新开始
@@ -236,20 +262,32 @@ cc.Class({
         this.bird.runAction(sequence);
     },
 
+    setScore: function setScore() {
+        this.scoreDisplay.node.active = false;
+        this.lastScore.string = this.score;
+        console.log(cc.sys.localStorage.getItem("bestScore"));
+        if (this.score > cc.sys.localStorage.getItem("bestScore")) {
+            cc.sys.localStorage.setItem("bestScore", this.score);
+        }
+        if (cc.sys.localStorage.getItem("bestScore")) {
+            this.bestScore.string = cc.sys.localStorage.getItem("bestScore");
+        }
+    },
+
     update: function update(dt) {
         //未开始时小鸟的浮动
         if (this.bird.isprepared == false) {
             this.birdFloat();
         }
 
-        //隐藏标题，现实记分板
+        //隐藏标题，显示记分板
         if (this.bird.isprepared == true) {
             this.title.active = false;
-            this.scoreDisplay.node.active = true;
         }
 
         //在游戏开始之后、结束之前，移动游戏中的柱子
         if (this.bird.isprepared == true && this.isGameOver == false) {
+            this.scoreDisplay.node.active = true;
             this.groundMove();
             this.pillarMove();
         }
